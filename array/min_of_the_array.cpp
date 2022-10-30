@@ -1,34 +1,16 @@
-// #include<stdio.h>
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main(){
-    int i,j;
-    for(i=1;i<=3;i++){
-        for(j=1;j<=5;j++){
-             cout<<endl;
-           // printf("\n");
-            if(i==1||i==5||j==1||j==5){
-                cout<<"*";
-                //printf("* ");
-            }
-            else{
-                cout<<" ";
-                //printf(" ");
-            }
+    int a[]={7,6,5,4,3,2,9};
+    int min=a[0];
+    for(int i=1;i<6;i++){
+        if(a[i]<min)
+        min=a[i];
+    }cout<<"minimum num  "<<min<<endl;
 
-        }
-    }
-    // int count=1,i,j;
-    // for ( i = 0; i < 4; i++)
-    // {
-    //     for ( i = 0; i < 4; i++)
-    //     {
-    //         cout<<count<<" ";
-    //         count++;
-    //     }
-    //     cout<<endl;
-        
-    // }
-    
-    return 0;
+    int max=a[0];
+    for(int i=1;i<6;i++){
+        if(a[i]>max)
+        max=a[i];
+    } cout<<"maximum num "<<max<<endl;
 }
