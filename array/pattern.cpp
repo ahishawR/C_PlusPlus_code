@@ -6,7 +6,6 @@ int main(){
          cout<<endl;
         for(j=1;j<=5;j++){
             
-           // printf("\n");
             if(i==1||i==5||j==1||j==5){
                 cout<<"*";
                 //printf("* ");
