@@ -1,18 +1,17 @@
 #include<iostream>
-#include<string>
 using namespace std;
 int main(){
     char day;
     cout<<"Hit the day ";
     cin>>day;
-//    getline(cin,day;
-    cout<<day;
     switch(day){
+        //lower case
         case 'm' :cout<<"working day";break;
         case 't' : cout<<"working day";
         case 'w' :cout<<"working day";break;
         case 'f' :cout<<"working day";break;
         case 's' :cout<<" non working day";
+        //upper case
         case 'M' :cout<<"working day";break;
         case 'T' : cout<<"working day";
         case 'W' :cout<<"working day";break;

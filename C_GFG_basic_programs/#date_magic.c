@@ -1,15 +1,15 @@
 #include<stdio.h>
-
+//we can't call function inside ternary;
 void day(int d){
 
     (d==1)?printf("MONDAY"):printf("");
     (d==2)?printf("TUESDAY"):printf("");
     (d==3)?printf("WEDNESDAY"):printf("");
-    (d==4)?printf("THURESDAY"):printf("");
+    (d==4)?printf("THURSDAY"):printf("");
     (d==5)?printf("FRIDAY"):printf("");
-    (d==6)?printf("SATERDAY"):printf("");
+    (d==6)?printf("SATURDAY"):printf("");
     (d==7)?printf("SUNDAY"):printf("");
-
+ 
 }
 void month(int m){
 
@@ -51,12 +51,10 @@ int main(){
                         
                         printf("\nWant to continue enter (1)or else(0)");
                         scanf("%d",&cheak2);
-                        printf("%d",cheak2);
                         n--;
                     }
                 
     }while(cheak2!=0);
-    printf("thankyou");
-   
+    printf("THANKYOU");
 return 0;
 }
