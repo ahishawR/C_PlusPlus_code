@@ -20,4 +20,8 @@ int main(){
     b = temp;
    printf("\nAFTER a=%d , b=%d  ",a,b);
    return 0;
+   /* printf("\nBEFORE a=%d , b=%d  ",*a,*b); meaning 
+        Time Complexity: O(1)
+        Auxiliary Space: O(1)
+    */
 }

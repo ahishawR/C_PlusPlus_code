@@ -16,7 +16,7 @@ void main(){
         printf("ASCII VALUE %d",b);
 
         /*  Time complexity: O(1) since performing constant operations
-            Auxiliary Space: O(1)
+            Auxiliary Space: O(1)n
 
         */
 
