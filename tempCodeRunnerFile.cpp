@@ -13,13 +13,12 @@
 
 // // This code is contributed by sarajadhav12052009
 #include<stdio.h>
-int main()
+void main()
 {
 static int i=5;
 if(--i){
-
-printf("%d ", i); 
-main();}
-return 0;
+            main();
+            printf("%d ", i); }
+			//return 0;
 }
 
