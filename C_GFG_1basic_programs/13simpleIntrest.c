@@ -10,9 +10,9 @@ float si(float t,float r,float p){
 }
 
 int main(){
-float p,t,r;
+float p,t,r;              
 printf("Enter Principle ");
-scanf ("%f",&p);
+scanf ("%f",&p);               //inside scanf we can't use %.2f; error will occure;
 printf("Enter time ");
 scanf ("%f",&t);
 printf("Enter rate ");

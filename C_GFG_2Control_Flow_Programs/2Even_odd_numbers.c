@@ -1,0 +1,28 @@
+#include <stdio.h>
+/*to cheak even or odd numbers by switch case*/
+
+int main()
+{
+    int num;
+    printf("Enter any number to check even or odd: ");
+    scanf("%d", &num);
+    if(num==0){
+        printf("not even not odd");
+        return 0;
+    }
+
+    switch(num % 2)
+    {
+        /* If n%2 == 0 */
+        case 0: 
+            printf("%d Number is Even",num);
+            break;
+
+        /* Else if n%2 == 1 */
+        case 1: 
+            printf("%d Number is Odd",num);
+            break;
+    }
+
+    return 0;
+}
