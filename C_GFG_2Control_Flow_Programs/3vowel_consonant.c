@@ -6,8 +6,19 @@ int main()
     int ch;
     printf("Enter a character ");
     scanf("%c", &ch);
-    if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch == 'o' || ch == 'O' || ch == 'u' || ch == 'U')
-        printf("%c is a vowal ", ch);
-    else
-        printf("%c is a consonant ", ch);
+
+    switch(ch)
+    {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        printf("%c is a vowal ");
+        break;
+        default : 
+        printf("%c is a concole ",ch);
+
+    }
+    return 0;
 }

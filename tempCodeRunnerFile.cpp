@@ -12,13 +12,20 @@
 // }
 
 // // This code is contributed by sarajadhav12052009
-#include<stdio.h>
-void main()
-{
-static int i=5;
-if(--i){
-            main();
-            printf("%d ", i); }
-			//return 0;
+// #// Example of 'SIGABRT' error
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int arr[5] = {1, 2, 3, 4, 5};
+
+	// SIGABRT error
+	arr[6] = 6;
+
+	return 0;
 }
+
+// This code is contributed by sarajadhav12052009
 
