@@ -4,7 +4,7 @@
 int main()
 {
     FILE *fp;// file pointer 
-    char word[50];//comparing each name with given one
+    char word[30];//comparing each name with given one
     char ch;
     char *filename = "cheak.txt";//file 
     char search[30];//name to search
@@ -22,7 +22,7 @@ int main()
             count++;
         }
         //printf("\n word %s",word);
-    } while (ch != EOF);//EFO means end of file is reached
+    } while (ch != EOF);//EOF means end of file is reached
 
     if (count == 0)
         printf(" NOT FOUND \n");
