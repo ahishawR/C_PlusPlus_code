@@ -32,7 +32,7 @@ void month(int m){
 int main(){
     int d,m,n;
     char cheak,cheak2;
-    do{
+    while(1){
         printf("\nEnter (d) for day and (m) for month\n");
         scanf("\n%c",&cheak);
 
@@ -49,15 +49,15 @@ int main(){
                 month(m);
                 break;
         
-            }       n=1;
-                    while(n>0){
+            }      
                         
                         printf("\nWant to continue enter (1)or else(0)");
                         scanf("%d",&cheak2);
-                        n--;
-                    }
+                        if(cheak2==0){
+                            printf("THANKYOU");
+                            return 0;
+                        }
+                    
                 
-    }while(cheak2!=0);
-    printf("THANKYOU");
-return 0;
+    }
 }
