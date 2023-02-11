@@ -1,0 +1,189 @@
+1.) When a copy constructor may be called?
+
+A) When an object of the class is returned by value.
+
+B)When an object of the class is passed (to a function) by value as an argument.
+
+C)When an object is constructed based on another object of the same class
+
+D)When compiler generates a temporary object.
+
+E)All of the above      --(correct one)--
+--------------------------------------------------------------------------------------------------------->
+
+2.)Which of the following is true
+
+A)gets() can read a string with newline characters but a normal scanf() with %s can not.
+
+B)gets() can read a string with spaces but a normal scanf() with %s can not.        --(correct one)--
+
+C)gets() can always replace scanf() without any additional code.
+
+D)None of the above
+__________________________________________________________________________________________________.
+Explanation:--> 
+************
+gets() can read a string with spaces but a normal scanf() with %s can not. 
+Consider following program as an example. If we enter "Geeks Quiz" as input in below program, 
+the program prints "Geeks" But in the following program, if we enter "Geeks Quiz", it prints 
+"Geeks Quiz"
+_________________________________________________________________________________________________.
+---------------------------------------------------------------------------------------------------------->  
+
+3.)Which of the following is true
+
+A)gets() doesn't do any array bound testing and should not be used. --(correct one)--
+ 
+B)fgets() should be used in place of gets() only for files, otherwise gets() is fine
+ 
+C)gets() cannot read strings with spaces
+ 
+D)None of the above
+_____________________________________________________________________________________________________.
+Explanation:--> 
+*************
+Use of gets() generates the risk of an overflow of the allocated buffer. 
+This happens because the function gets(), doesn't know the size of the buffer, 
+and continues reading until it finds a newline "\n" or encounters EOF, and so it 
+may overflow the bounds of the buffer it was given.
+______________________________________________________________________________________________________.
+------------------------------------------------------------------------------------------------------->
+4.)What does the following C statement mean? 
+scanf("%4s", str);
+
+A)Read exactly 4 characters from console.
+ 
+B)Read maximum 4 characters from console.--(correct one)--
+
+C)Read a string str in multiples of 4
+ 
+D)Nothing
+------------------------------------------------------------------------------------------------------------->
+5.)What is the return type of getchar()?
+
+A)int--(correct one)--
+
+B)char
+
+C)unsigned char
+
+D)float
+___________________________________________________________________________________________________________.
+Explanation:-->
+**************
+The return type of getchar() is int to accommodate EOF which indicates failure:
+____________________________________________________________________________________________________________.
+-------------------------------------------------------------------------------------------------------------------->
+6.)Normally user programs are prevented from handling I/O directly by I/O instructions in them. For CPUs having explicit I/O instructions, 
+such I/O protection is ensured by having the I/O instructions privileged. In a CPU with memory mapped I/O, 
+there is no explicit I/O instruction.
+Which one of the following is true for a CPU with memory mapped I/O?
+
+A)I/O protection is ensured by operating system routine (s)--(correct one)--
+
+B)I/O protection is ensured by a hardware trap
+
+C)I/O protection is ensured during system configuration
+
+D)I/O protection is not possible
+__________________________________________________________________________________________________.
+Explanation:-->
+**************
+User applications are not allowed to perform I/O in user 
+mode - All I/O requests are handled through system calls that must be performed in kernel mode.
+__________________________________________________________________________________________________.
+-------------------------------------------------------------------------------------------------------->
+7.)Which of the following functions from “stdio.h” can be used in place of printf()?
+
+A)fputs() with FILE stream as stdout.
+
+B)fprintf() with FILE stream as stdout.--(correct one)--
+
+C)fwrite() with FILE stream as stdout.
+
+D)All of the above three - a, b and c.
+
+E)In “stdio.h”, there’s no other equivalent function of printf().
+_______________________________________________________________________________________________________.
+Explanation:-->
+**************
+Though fputs() and fwrite() can accept FILE stream stdout and can output the given string 
+but the input string wouldn’t result in formatted (i.e. containing format specifiers) output. 
+But fprintf() can be used for formatted output. That’s why fprintf(stdout,"=%d=",a); and printf("=%d=",a); 
+both are equivalent. The correct answer is B.
+___________________________________________________________________________________________________________.
+-------------------------------------------------------------------------------------------------------------->
+8.)Consider the following C code. Assume that unsigned long int type length is 64 bits.
+
+        unsigned long int fun(unsigned long int n) {
+        unsigned long int i, j = 0, sum = 0;
+        for( i = n; i > 1; i = i/2) j++;
+        for( ; j > 1; j = j/2) sum++;
+        return sum;
+    }
+
+The value returned when we call fun with the input 2^40 is
+
+A)4
+
+B)5--(correct one)--
+
+C)6
+
+D)40
+_________________________________________________________________________________________.
+Explanation:-->
+*************
+n takes 2^40 unsigned long int fun(unsigned long int n) 
+initialized sum = 0 unsigned long int i, j = 0, sum = 0; 
+First it takes i = n = 2^40, 
+then it divides i by 2 and incremented once j 
+each time, that's will make makes j = 40, for( i=n; i>1; i=i/2) j++; 
+Now the value of j = 40, 
+it divides j by 2 and incremented once sum 
+each time, that's will make makes sum = 5, for( ; j>1; j=j/2) sum++; 
+returns sum = 5 return sum;
+____________________________________________________________________________________________.
+-------------------------------------------------------------------------------------------------->
+9.)What is the value returned by the function f given below 
+when n = 100? int f (int n) 
+{ if (n = = 0) then return n; else return n + f(n-2); }
+
+A)2550--(correct one)--
+
+B)2556
+
+C)5220
+
+D)5520
+_________________________________________________________________________________________.
+Explanation:-->
+*************
+We have function:
+
+    int f (int n)
+    { if (n = = 0) then return n;
+        else
+        return n + f(n-2);
+    }
+we have to find output for n = 100 i.e <>int f (100) 
+{ if (n = = 0) then return n; 
+//failure// 
+else return 100 + f (98) { if (n = = 0) then return n; 
+//failure//
+else return 98 + f (96) 
+{ if (n = = 0) then return n; 
+//failure// 
+else return 96 + f (94).......................f(0);
+// It will be a AP series of 100 , 98, 96,.........0// ; }; }; } 
+ Sum of series when we know first and last term and no of terms: 
+ Sn = n / 2 * (first term + last term) i.e. 51 / 2 * (100 + 0). = 51 * 50 = 2550.
+ 
+
+
+
+
+
+
+
+ 
