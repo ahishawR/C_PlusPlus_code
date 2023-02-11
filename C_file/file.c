@@ -4,7 +4,7 @@
 int main()
 {
     char name[20];
-    char data[500];
+    char data[20];
     int point;
     printf("Enter a name ");
     scanf("%s", &name);
@@ -13,7 +13,7 @@ int main()
     if (fptr != NULL)
     {
         // printf("file open ");
-        while (fgets(data, 500, fptr))
+        while (fgets(data, 20, fptr))
         {
             point=strcamp(name, data);
             if(point==0){

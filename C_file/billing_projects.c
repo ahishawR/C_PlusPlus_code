@@ -38,9 +38,13 @@ int main()
     }
 
     if(c==1)
+    {
         printf("\n%s Found at Position '%d'\n THANKYOU ",name[i],i+1);
+    }
     else
-        printf("\n%s NOT Present in Above Array\N THANKYOU ",name[i]);
-    return 0;
+    {
+        printf("\n%s NOT Present in Above billing list\n THANKYOU ",name[i]);
+    }
+        return 0;
 }
 
