@@ -12,13 +12,13 @@ private:
 public:
     Array(int size)
     {
-        this->size = size;
+        this->size = size; //this is a keyword in cpp
         A = new int[size];
     }
 
     void create()
     {
-        cout << "Enter number of elements: " << flush;
+        cout << "Enter number of elements: "<<flush;//Flushes the output stream. This manipulator simply calls the stream's flush() member function
         cin >> length;
         cout << "Enter the array elements: " << endl;
         for (int i = 0; i < length; i++)
