@@ -13,7 +13,7 @@ int power2(int m,int n){
     return(m*power2(m*m,(n-1)/2));
 }
 void main(){
-    int r=power2(5,3);
+    int r=power(5,3);
     printf("%d",r);
 }
 

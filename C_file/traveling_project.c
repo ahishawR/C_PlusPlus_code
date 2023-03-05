@@ -12,52 +12,52 @@ main(){
 do{
 
 printf("enter destination : \n");
-printf("[Q] Quezon\n");
-printf("[K] Kamuning\n");
-printf("[A] Araneta Center Cubao\n");
-printf("[G] Gilmore\n");
-printf("[L] Legarda\n");
-printf("[S] Santolan\n");
+printf("[P] Puri\n");
+printf("[B] Bhubanaswer\n");
+printf("[C] Cuttack\n");
+printf("[R] Roulkla\n");
+printf("[L] Station\n");
+printf("[O] Old Town\n");
 
 scanf("%c",&destination);
     int fare;
 
     switch(destination){
-        case 'q':
-        case 'Q':
-            printf("Quezon city\n\n");
-            fare = 11;
+        case 'p':
+        case 'P':
+            printf("Puri\n\n");
+            fare = 50;
 
         break;
-        case 'k':
-        case 'K':
-            printf("Kamuning\n\n");
-            fare = 13;
+        case 'b':
+        case 'B':
+            printf("Bhubanaswer\n\n");
+            fare = 15;
         break;
 
-        case 'a':
-        case 'A':
-            printf("Araneta Center Cubao\n\n");
-            fare = 14;
-        break;
-
-        case 'G':
-        case 'g':
-
-            printf("Gilmore\n\n");
-            fare = 16;
-        break;
-
-        case 'L':
-        case 'l':
-
-            printf("Legarda\n\n");
+        case 'c':
+        case 'C':
+            printf("Cuttack\n\n");
             fare = 20;
+        break;
+
+        case 'R':
+        case 'r':
+
+            printf("Roulkla\n\n");
+            fare = 70;
         break;
 
         case 's':
         case 'S':
-            printf("Santolan\n\n");
+
+            printf("Station\n\n");
+            fare = 40;
+        break;
+
+        case 'o':
+        case 'O':
+            printf("Old town\n\n");
             fare = 25;
         break;
 

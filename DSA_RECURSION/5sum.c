@@ -7,22 +7,25 @@
     Another Defination is ------>[n(n+1)/2]
     */
 
-#include<stdio.h>
-int sum(int n){
-    if(n==0)        //Time Complexity---O(1)
-    return 0;       //Space Complexity---O(1)
-   // return(sum(n-1)+n);
-    return(n*(n+1)/2);
+#include <stdio.h>
+int sum(int n)
+{
+    if (n == 0)   // Time Complexity---O(1)
+        return 0; // Space Complexity---(n+1)
+    //return(sum(n-1)+n);
+    return (n * (n + 1) / 2);
 }
-int sum2(int n){
-    int s=0,i;
-    if(n==0)         //Time Complexity---O(n)
-    return 0;       //Space Complexity---O(3)
-    for(i=1;i<=n;i++){
-        s=s+1;
-    } return s;
+int sum2(int n)
+{
+    int s = 0, i;            //Time Complexity---O(n)
+    for (i = 1; i <= n; i++)  //Space Complexity---O(3) n,i,s;
+    {
+        s = s + i;
+    }
+    return s;
 }
-void main(){
-     int a=sum(3);
-     printf(" recursion %d loop %d",a,sum2(3));   
+void main()
+{
+    int a = sum(3);
+    printf(" recursion %d loop %d", a, sum2(3));
 }
